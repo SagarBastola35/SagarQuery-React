@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Github from "../src/assets/github.svg";
 import Twitter from "../src/assets/Twitter.png";
 import LinkedIn from "../src/assets/LinkedIn.png";
-import Portfolio from "../src/assets/GitHub_Profile-Img.png";
+import Portfolio from "../src/assets/Github_Profile-Img.png";
 
 function App() {
   return (
