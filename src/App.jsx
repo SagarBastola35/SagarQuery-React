@@ -10,7 +10,7 @@ import Login from "./login/page.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Github from "../src/assets/github.svg";
 import Twitter from "../src/assets/Twitter.png";
-import Linkedin from "../src/assets/Linkedin.png";
+import LinkedIn from "../src/assets/LinkedIn.png";
 import Portfolio from "../src/assets/GitHub_Profile-Img.png";
 
 function App() {
@@ -101,7 +101,7 @@ function App() {
                 >
                   <img 
                     className="w-12 sm:w-16 md:w-20 lg:w-24" 
-                    src={Linkedin} 
+                    src={LinkedIn} 
                     alt="LinkedIn" 
                   />
                 </a>
