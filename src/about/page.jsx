@@ -1,3 +1,4 @@
+"use client"
 const Page = () => {
   return (
     <div className="w-full min-h-screen bg-linear-to-b from-white to-blue-50">
