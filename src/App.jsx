@@ -5,13 +5,13 @@ import Footer from "./components/Footer";
 import Home from "./home/page.jsx";
 import About from "./about/page.jsx";
 import Contact from "./contact/page.jsx";
-import SignUp from "./SignUp/page.jsx";
-import Login from "./Login/page.jsx";
+import SignUp from "./signUp/page.jsx";
+import Login from "./login/page.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Github from "../src/assets/github.svg";
 import Twitter from "../src/assets/Twitter.png";
-import Linkedin from "../src/assets/Linkedin.png";
-import Portfolio from "../src/assets/GitHub_Profile-Img.png";
+import LinkedIn from "../src/assets/LinkedIn.png";
+import Portfolio from "../src/assets/Github_Profile-Img.png";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          <Route path="/navbar" element={<Navbar />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -28,7 +29,7 @@ function App() {
       </BrowserRouter>
 
       {/* Hero Section */}
-      <div className="bg-green-200 text-black w-full">
+      <div onClick={heroImg} className="bg-green-200 text-black w-full">
         <section id="center">
           <div className="hero w-full overflow-hidden">
             <img
@@ -51,9 +52,9 @@ function App() {
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform duration-200"
                 >
-                  <img 
-                    src={Github} 
-                    alt="Github" 
+                  <img
+                    src={Github}
+                    alt="Github"
                     className="w-12 sm:w-16 md:w-20 lg:w-24"
                   />
                 </a>
@@ -67,10 +68,10 @@ function App() {
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform duration-200"
                 >
-                  <img 
-                    className="w-12 sm:w-16 md:w-20 lg:w-24 rounded-2xl" 
-                    src={Portfolio} 
-                    alt="Portfolio" 
+                  <img
+                    className="w-12 sm:w-16 md:w-20 lg:w-24 rounded-2xl"
+                    src={Portfolio}
+                    alt="Portfolio"
                   />
                 </a>
               </li>
@@ -83,10 +84,10 @@ function App() {
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform duration-200"
                 >
-                  <img 
-                    className="w-12 sm:w-16 md:w-20 lg:w-24" 
-                    src={Twitter} 
-                    alt="Twitter" 
+                  <img
+                    className="w-12 sm:w-16 md:w-20 lg:w-24"
+                    src={Twitter}
+                    alt="Twitter"
                   />
                 </a>
               </li>
@@ -99,10 +100,10 @@ function App() {
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform duration-200"
                 >
-                  <img 
-                    className="w-12 sm:w-16 md:w-20 lg:w-24" 
-                    src={Linkedin} 
-                    alt="LinkedIn" 
+                  <img
+                    className="w-12 sm:w-16 md:w-20 lg:w-24"
+                    src={LinkedIn}
+                    alt="LinkedIn"
                   />
                 </a>
               </li>

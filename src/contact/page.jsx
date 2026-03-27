@@ -32,10 +32,10 @@ const Page = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-4 sm:p-8 md:p-16">
+    <div className="flex items-center justify-center min-h-fit p-2 sm:p-4 md:p-8">
       <form
         onSubmit={submit}
-        className="w-full max-w-lg font-bold border-4 border-blue-950 rounded-3xl p-6 sm:p-8 md:p-12 bg-white shadow-lg"
+        className="w-full max-w-lg font-bold border-4 border-blue-950 rounded-3xl p-2 sm:p-4 md:p-6 bg-white shadow-lg min-h-screen"
       >
         <h2 className="text-2xl sm:text-3xl md:text-4xl text-blue-950 mb-8 text-center">
           Contact Us

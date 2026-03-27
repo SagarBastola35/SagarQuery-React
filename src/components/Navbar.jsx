@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-blue-950 text-white rounded-2xl">
-      <div className="p-4 md:p-6">
+      <div className="p-2 md:p-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="logo">
